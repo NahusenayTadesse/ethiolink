@@ -1,0 +1,36 @@
+# Public repository: only the SvelteKit app is tracked. Everything at the root is ignored unless
+# listed below — client documents, credentials, the old PHP site and its assets stay local.
+/*
+!/src
+!/static
+!/messages
+!/project.inlang
+!/scripts
+!/.gitignore
+!/.npmrc
+!/.prettierignore
+!/.env.example
+!/AGENTS.md
+!/README.md
+!/components.json
+!/drizzle.config.ts
+!/eslint.config.js
+!/package.json
+!/package-lock.json
+!/playwright.config.ts
+!/prettier.config.js
+!/svelte.config.js
+!/tsconfig.json
+!/vite.config.ts
+
+# Inside the tracked folders
+node_modules
+.DS_Store
+Thumbs.db
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+test-results
+src/lib/paraglide
+project.inlang/cache/
+# Uploaded files (admin-kit)
+.tempFiles
